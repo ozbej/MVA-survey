@@ -55,7 +55,7 @@ mVis also supports creating and modifying ML models, specifically introducing an
 
 
 \section{Software comparison}
-A comparison of general information of MVA software can be seen Table~\ref{tab:SoftwareGeneral}.
+A comparison of general information of MVA software can be seen in Table~\ref{tab:SoftwareGeneral}. A comparison of features of MVA software can be seen in Table~\ref{tab:SoftwareFeatures}.
 
 \begin{table}[tp]
 \tablestretch
@@ -84,3 +84,26 @@ mVis & January 20, 2021 & Free and open-source & Windows, Apple macOS, and Linux
 }
 \label{tab:SoftwareGeneral}
 \end{table}
+
+
+
+\afterpage{%
+\clearpage% Flush earlier floats (otherwise order might not be correct)
+\thispagestyle{empty}% empty page style (?)
+\begin{landscape}% Landscape page
+\tablestretch
+\rowcolors{2}{}{tablerowcolour}
+\centering
+\begin{tabularx}{\linewidth}
+{>{\kern-\tabcolsep}lcccccccccccc<{\kern-\tabcolsep}}
+\toprule
+\thead{Software} & \thead{Custom \\ Datasets} & \thead{Brushing} & \thead{Scatter \\ Plot} & \thead{Scatter \\ Plot \\ Matrix} & \thead{Parallel \\ Coordinates} & \thead{Parallel \\ Coordinates \\ Matrix} & \thead{Similarity \\ Map} & \thead{Time \\ Series} & \thead{Distributions} & \thead{Table \\ Plot} & \thead{Tree \\ Map} & \thead{Carto \\ Plot} \\
+\midrule
+InfoScope & \checkmark & & & & & & & & & & & \\
+\bottomrule
+\end{tabularx}
+\captionof{table}{Comparison of features of MVA software.}
+\label{tab:SoftwareFeatures}
+\end{landscape}
+\clearpage% Flush page
+}
