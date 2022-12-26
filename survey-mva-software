@@ -1,0 +1,86 @@
+\chapter{Multidimensional Visual Analysis Software}
+
+\label{chap:MVASoftware}
+
+MVA software is a type of computer program that is designed to help analysts visualize and analyze complex data sets. These programs typically include a wide range of tools and features that allow users to create and manipulate graphical representations of the data, such as scatter plots, parallel coordinates, and heat maps. By using these tools, analysts can quickly and easily explore the data and gain insights that might not be immediately apparent from looking at the raw data. MVA software is commonly used in fields such as business, finance, and marketing to help make data-driven decisions and uncover hidden trends in the data. In this section, we will review some popular MVA software programs.
+
+
+
+
+\section{InfoScope}
+
+InfoScope \parencite{InfoScope} is an interactive visualization tool to access, explore, and communicate large or complex datasets. InfoScope is available as free software with the last update issued on February 9, 2007. InfoScope is available for Windows, Apple macOS, and Linux.
+
+InfoScope can visualize a collection of selected publicly available datasets, mainly from the finance sector. InfoScope provides an overview of global relationships between objects by using multiple views to show different aspects of the data at the same time. InfoScope provides the following views: \emph{Geographic Locations} as a world map, \emph{Thematic Similarities} as high-dimensional projections, \emph{Graphical View} as parallel coordinates, and \emph{Table View}. All views are highly interactive and tightly linked, so that all interactions in one view are always reflected on the others. Specific numeric values of attributes can be obtained by probing the objects in the views, and dynamic queries on a combination of attributes can be executed using range sliders. All actions are accompanied by visual feedback within a common frame of reference. The visual representations make it easy to identify outliers, patterns, or anomalies. The tool's high level of interactivity and immediate feedback supports a fluid and informal approach to problem-solving, as it is designed to fit the way people naturally think and work.
+
+
+
+
+
+\section{High-D}
+
+High-D \parencite{HighD} is a versatile tool for revealing hidden features, highlighting trends and relationships, and finding anomalies in datasets of any size. At its heart is a powerful interactive parallel coordinates plot for quick data access, analytical, and presentation purpose. High-D is available as paid software for 199 USD and with 30-day free evaluation period. The last update was issued on December 5, 2022. High-D is available for Windows, Apple macOS, and Linux.
+
+
+High-D supports visualization of popular tabular formats (OpenDocument, CSV, Excel, TSV, Access, ...), common relational databases (MySQL, Oracle, SQL Server, ...), and interoperability with specialized applications (like Microsoft Project).
+
+High-D provides an overview of global relationships between objects by using multiple views to show different aspects of the data at the same time. High-D provides the following views: \emph{Parallel Coordinates}, \emph{TablePlot}, \emph{Distributions}, \emph{Scatter Plot Matrix}, \emph{Parallel Coordinates Matrix}, \emph{Scatter Plot}, \emph{Multidimensional Scaling}, \emph{TreeMap}, and \emph{CartoPlot}. High-D also supports clustering with k-means++ algorithm. Views are highly interactive and closely connected, so any interactions made in one view are instantly reflected in all other views. It is possible to obtain specific numeric values of attributes by examining the objects within the views, and dynamic queries on a combination of attributes can be performed using range sliders. All actions are accompanied by visual feedback within a common frame of reference. The visual representations make it easy to spot unusual data points, patterns, or anomalies. The tool's high level of interactivity and immediate feedback support a flexible and informal method of problem-solving, as it is designed to match the way people naturally think and work.
+
+
+
+
+
+\section{XMDV}
+
+
+
+
+
+\section{GGobi}
+
+GGobi \parencite{cook2007interactive} is a visualization program for exploring high-dimensional data. GGobi is available as a free and open-source software with the last update issued on June 10, 2012. InfoScope is available for Windows, Apple macOS, and Linux.
+
+GGobi provides a dynamic and interactive graphics as tours, where data is displayed in an animation. The data is also available in the following views: \emph{Scatter Plot}, \emph{Scatter Plot Matrix}, \emph{Parallel Coordinates}, \emph{Time Series}, \emph{Bar Chart}. Views offer limited interactivity and are not closely connected.
+
+
+\section{mVis}
+
+mVis \parencite{CHEGINI20199} is a visual analytics tool for visualizing multi-dimensional data. mVis is available as a free and open-source software with the last update issued on January 20, 2021. mVis is available for Windows, Apple macOS, and Linux.
+
+mVis consists of four data visualization views: \emph{Scatter Plot Matrix}, \emph{Scatter Plot}, \emph{Similarity Map}, and \emph{Parallel Coordinates}. mVis also consists of a panel for controlling data partitions. All of the visualizations are interconnected through standard brushing and linking, so that any changes or selections made in one view are reflected in all of the other views. Additionally, the user has the ability to close, rearrange, or expand any view as needed.
+
+mVis also supports creating and modifying ML models, specifically introducing an interactive visual labeling technique that allows an analyst to build and iteratively improve a ML classification model for multi-dimensional data sets. This technique combines linked visualizations, clustering, and active learning to allow the analyst to interactively label a multi-dimensional dataset in an efficient manner.
+
+
+
+
+\section{Software comparison}
+A comparison of general information of MVA software can be seen Table~\ref{tab:SoftwareGeneral}.
+
+\begin{table}[tp]
+\tablestretch
+\rowcolors{2}{}{tablerowcolour}
+\centering
+\begin{tabularx}{\linewidth}
+{>{\kern-\tabcolsep}lllX<{\kern-\tabcolsep}}
+\toprule
+\textbf{Software} & \textbf{Last update} & \textbf{Licence} & \textbf{Systems} \\
+\midrule
+InfoScope & February 9, 2007 & Free or commercial & Windows, Apple macOS, and Linux \\
+%
+High-D & December 5, 2022 & Commercial & Windows, Apple macOS, and Linux \\
+%
+XMDV & & & \\
+%
+GGobi & June 10, 2012 & Free and open-source & Windows, Apple macOS, and Linux \\
+%
+mVis & January 20, 2021 & Free and open-source & Windows, Apple macOS, and Linux \\
+\bottomrule
+\end{tabularx}
+
+\caption[Comparison of general information of MVA software]
+{
+    Comparison of general information of MVA software.
+}
+\label{tab:SoftwareGeneral}
+\end{table}
