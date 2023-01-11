@@ -45,15 +45,14 @@ anomalies.
 
 \section{High-D}
 
-High-D \parencite{HighD} is the successor to InfoScope. It offers
-similar functionality with some improvements and added views. High-D
-is a versatile tool for revealing hidden features, highlighting trends
-and relationships, and finding anomalies in datasets of any size. At
-its heart is a powerful interactive parallel coordinates plot for
-quick data access, analytical, and presentation purpose. High-D is
-available as paid software for 199 USD and with 30-day free evaluation
-period. The last update was issued on \yearmonthday{2022}{12}{5}. High-D is
-available for Windows, macOS, and Linux.
+High-D \parencite{HighD} is the successor to InfoScope. It offers similar
+functionality with some improvements and added views. High-D is a versatile tool
+for revealing hidden features, highlighting trends and relationships, and
+finding anomalies in datasets of any size. At its heart is a powerful
+interactive parallel coordinates plot for quick data access, analytical, and
+presentation purpose. High-D is available as paid software for 199 USD and with
+30-day free evaluation period. The last update was issued on
+\yearmonthday{2022}{12}{5}. High-D is available for Windows, macOS, and Linux.
 
 
 High-D can visualize a collection of selected publicly available
@@ -214,44 +213,8 @@ and linking.
 \section{Comparison of Tools}
 
 A comparison of general information of MVA software can be seen in
-Table~\ref{tab:SoftwareGeneral}. A comparison of features of MVA
-software can be seen in Table~\ref{tab:SoftwareFeatures}.
-
-
-
-\begin{table}[tp]
-\tablestretch
-\rowcolors{2}{}{tablerowcolour}
-\centering
-\begin{tabularx}{\linewidth}
-{>{\kern-\tabcolsep}llXXl<{\kern-\tabcolsep}}
-\toprule
-\textbf{Software} & \textbf{Last update} & \textbf{Licence} & \textbf{Systems} & \textbf{Language} \\
-\midrule
-InfoScope & \yearmonthday{2007}{2}{9} & Free demo & Win, macOS, Linux & ? \\
-%
-High-D & \yearmonthday{2022}{12}{5} & Commercial & Win, macOS, Linux & ? \\
-%
-GGobi & \yearmonthday{2012}{6}{10} & Free, open-source & Win, macOS, Linux & C \\
-%
-mVis & \yearmonthday{2021}{1}{20} & Free, open-source & Win, macOS, Linux & Java \\
-%
-Improvise & \yearmonthday{2020}{10}{28} & Free, open-source & Win, macOS, Linux & Java \\
-%
-MyBrush & \yearmonthday{2017}{9}{22} & Free, open-source & Web Browser & JavaScript \\
-%
-XDAT & \yearmonthday{2020}{8}{26} & Free & Win, macOS, Linux & Java \\
-%
-TabuVis & \yearmonthday{2022}{2}{19} & Free & Win, macOS, Linux & Java \\
-\bottomrule
-\end{tabularx}
-
-\caption[Overview of MVA Tools]
-{%
-Overview of MVA tools.
-}
-\label{tab:SoftwareGeneral}
-\end{table}
+Table~\ref{tab:ToolsGeneral}. A comparison of features of MVA
+software can be seen in Table~\ref{tab:ToolsFeatures}.
 
 
 
@@ -273,6 +236,13 @@ Last Update: & \yearmonth{2007}{2} & \yearmonth{2022}{12} & \yearmonth{2012}{6} 
 %
 Licence: & Free demo & Commercial & Free, open-source & Free, open-source &
 Free, open-source & Free, open-source & Free & Free \\
+%
+Systems: & Win, Mac\-OS, Linux & Win, Mac\-OS, Linux & Win, Mac\-OS, Linux & Win,
+Mac\-OS, Linux & Win, Mac\-OS, Linux & Web Browser & Win, Mac\-OS, Linux & Win, Mac\-OS,
+Linux \\
+%
+Language & ? & ? & C & Java & Java & JavaScript & Java & Java \\
+%
 \bottomrule
 \end{tabularx}
 \end{scriptsize}
@@ -281,45 +251,66 @@ Free, open-source & Free, open-source & Free & Free \\
 {%
 Overview of MVA tools.
 }
-\label{tab:SoftwareGeneral}
+\label{tab:ToolsGeneral}
 \end{table}
 
 
 
 
-%% \afterpage{%
-%% \clearpage% Flush earlier floats (otherwise order might not be correct)
-%% \thispagestyle{empty}% empty page style (?)
-%% \begin{landscape}% Landscape page
-%% \tablestretch
-%% \rowcolors{2}{}{tablerowcolour}
-%% \centering
-%% \begin{tabularx}{\linewidth}
-%% {>{\kern-\tabcolsep}lcccccccccccccc<{\kern-\tabcolsep}}
-%% \toprule
-%% \thead{Software} & \thead{Custom \\ Datasets} & \thead{Brushing} & \thead{Linking} & \thead{Table \\ View} & \thead{Scatter \\ Plot} & \thead{Scatter \\ Plot \\ Matrix} & \thead{Parallel \\ Coordinates} & \thead{Parallel \\ Coordinates \\ Matrix} & \thead{Similarity \\ Map} & \thead{Time \\ Series} & \thead{Distributions} & \thead{Table \\ Plot} & \thead{Tree \\ Map} & \thead{Carto \\ Plot} \\
-%% \midrule
-%% InfoScope & \checkmark & \checkmark & \checkmark & \checkmark & & & \checkmark & & \checkmark & & & & & \checkmark \\
-%% %
-%% High-D & \checkmark & \checkmark & \checkmark & \checkmark & \checkmark & \checkmark & \checkmark & \checkmark & \checkmark &  & \checkmark & \checkmark & \checkmark & \checkmark \\
-%% %
-%% GGobi & \checkmark & & & & \checkmark & \checkmark & \checkmark & & & \checkmark & \checkmark & & & \\
-%% %
-%% mVis & \checkmark & \checkmark & \checkmark & & \checkmark & \checkmark & \checkmark & & \checkmark & & & & & \\
-%% %
-%% Improvise & \checkmark & & & \checkmark & \checkmark & \checkmark & & & \checkmark & \checkmark & \checkmark & \checkmark & \checkmark & \checkmark \\
-%% %
-%% MyBrush & & \checkmark & \checkmark & & \checkmark & & \checkmark & & & & \checkmark & & & \\
-%% %
-%% XDAT & \checkmark & \checkmark & \checkmark & \checkmark & \checkmark & & \checkmark & & & & & & & \\
-%% %
-%% TabuVis & \checkmark & & & & \checkmark & & \checkmark & & & & & & & \\
-%% \bottomrule
-%% \end{tabularx}
-%% \captionof{table}{Comparison of MVA Tools.}
-%% \label{tab:SoftwareFeatures}
-%% \end{landscape}
-%% \clearpage% Flush page
-%% }
 
+\begin{table}[tp]
+\begin{scriptsize}
+\tablestretch
+\rowcolors{2}{}{tablerowcolour}
+\centering
+\begin{tabularx}{\linewidth}
+{>{\kern-\tabcolsep}lCCCCCCCC<{\kern-\tabcolsep}}
+\toprule
+~ & \textbf{InfoScope} & \textbf{High-D} & \textbf{GGobi} & \textbf{mVis} & \textbf{Improvise} & \textbf{MyBrush} & \textbf{XDAT} & \textbf{TabuVis} \\
+\midrule
+%
+Custom Datasets: & & \checkmark & \checkmark & \checkmark & \checkmark & &
+\checkmark & \checkmark \\
+%
+Brushing: & \checkmark & \checkmark & & \checkmark & & \checkmark & \checkmark &
+\\
+%
+Linking: & \checkmark & \checkmark & & \checkmark & & \checkmark & \checkmark &
+\\
+%
+Table View: & \checkmark & \checkmark & & & \checkmark & & \checkmark & \\
+%
+Scattter Plot: & & \checkmark & \checkmark & \checkmark & \checkmark &
+\checkmark & \checkmark & \checkmark \\
+%
+Scatter Plot Matrix: & & \checkmark & \checkmark & \checkmark & \checkmark & & &
+\\
+%
+Parallel Coordinates: & \checkmark & \checkmark & \checkmark & \checkmark & &
+\checkmark & \checkmark & \checkmark \\
+%
+Parallel Coordinates Matrix: & & \checkmark & & & & & & \\
+%
+Similarity Map: & \checkmark & \checkmark & & \checkmark & \checkmark & & & \\
+%
+Time Series: & & & \checkmark & & \checkmark & & & \\
+%
+Distributions: & & \checkmark & \checkmark & & \checkmark & \checkmark & & \\
+%
+Table Plot: & & \checkmark & & & \checkmark & & & \\
+%
+Tree Map: & & \checkmark & & & \checkmark & & & \\
+%
+Carto Plot: & \checkmark & \checkmark & & & \checkmark & & \\
+%
+\bottomrule
+\end{tabularx}
+\end{scriptsize}
+
+\caption[Comparison of MVA Tools]
+{%
+Comparison of MVA tools.
+}
+\label{tab:ToolsFeatures}
+\end{table}
 
