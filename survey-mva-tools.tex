@@ -224,7 +224,7 @@ software can be seen in Table~\ref{tab:SoftwareFeatures}.
 \rowcolors{2}{}{tablerowcolour}
 \centering
 \begin{tabularx}{\linewidth}
-{>{\kern-\tabcolsep}lllXl<{\kern-\tabcolsep}}
+{>{\kern-\tabcolsep}llXXl<{\kern-\tabcolsep}}
 \toprule
 \textbf{Software} & \textbf{Last update} & \textbf{Licence} & \textbf{Systems} & \textbf{Language} \\
 \midrule
@@ -255,21 +255,27 @@ Overview of MVA tools.
 
 
 
+
 \begin{table}[tp]
+\begin{scriptsize}
 \tablestretch
 \rowcolors{2}{}{tablerowcolour}
 \centering
 \begin{tabularx}{\linewidth}
-{>{\kern-\tabcolsep}lllllllll<{\kern-\tabcolsep}}
+{>{\kern-\tabcolsep}lXXXXXXXX<{\kern-\tabcolsep}}
 \toprule
-\textbf{Info} & \textbf{InfoScope} & \textbf{High-D} & \textbf{GGobi} & \textbf{mVis} & \textbf{Improvise} & \textbf{MyBrush} & \textbf{XDAT} & \textbf{TabuVis} \\
+~ & \textbf{InfoScope} & \textbf{High-D} & \textbf{GGobi} & \textbf{mVis} & \textbf{Improvise} & \textbf{MyBrush} & \textbf{XDAT} & \textbf{TabuVis} \\
 \midrule
 %
-Last Update & \yearmonthday{2007}{2}{9} & \yearmonthday{2022}{12}{5} & \yearmonthday{2012}{6}{10} & \yearmonthday{2021}{1}{20} & \yearmonthday{2020}{10}{28} & \yearmonthday{2017}{9}{22} & \yearmonthday{2020}{8}{26} & \yearmonthday{2022}{2}{19} \\
+Last Update: & \yearmonth{2007}{2} & \yearmonth{2022}{12} & \yearmonth{2012}{6} &
+\yearmonth{2021}{1} & \yearmonth{2020}{10} & \yearmonth{2017}{9} &
+\yearmonth{2020}{8} & \yearmonth{2022}{2} \\
 %
-Licence & Free demo & Commercial & \makecell{Free,\\ open-source} & \makecell{Free,\\ open-source} & \makecell{Free,\\ open-source} & \makecell{Free,\\ open-source} & Free & Free \\
+Licence: & Free demo & Commercial & Free, open-source & Free, open-source &
+Free, open-source & Free, open-source & Free & Free \\
 \bottomrule
 \end{tabularx}
+\end{scriptsize}
 
 \caption[Overview of MVA Tools]
 {%
@@ -281,39 +287,39 @@ Overview of MVA tools.
 
 
 
-\afterpage{%
-\clearpage% Flush earlier floats (otherwise order might not be correct)
-\thispagestyle{empty}% empty page style (?)
-\begin{landscape}% Landscape page
-\tablestretch
-\rowcolors{2}{}{tablerowcolour}
-\centering
-\begin{tabularx}{\linewidth}
-{>{\kern-\tabcolsep}lcccccccccccccc<{\kern-\tabcolsep}}
-\toprule
-\thead{Software} & \thead{Custom \\ Datasets} & \thead{Brushing} & \thead{Linking} & \thead{Table \\ View} & \thead{Scatter \\ Plot} & \thead{Scatter \\ Plot \\ Matrix} & \thead{Parallel \\ Coordinates} & \thead{Parallel \\ Coordinates \\ Matrix} & \thead{Similarity \\ Map} & \thead{Time \\ Series} & \thead{Distributions} & \thead{Table \\ Plot} & \thead{Tree \\ Map} & \thead{Carto \\ Plot} \\
-\midrule
-InfoScope & \checkmark & \checkmark & \checkmark & \checkmark & & & \checkmark & & \checkmark & & & & & \checkmark \\
-%
-High-D & \checkmark & \checkmark & \checkmark & \checkmark & \checkmark & \checkmark & \checkmark & \checkmark & \checkmark &  & \checkmark & \checkmark & \checkmark & \checkmark \\
-%
-GGobi & \checkmark & & & & \checkmark & \checkmark & \checkmark & & & \checkmark & \checkmark & & & \\
-%
-mVis & \checkmark & \checkmark & \checkmark & & \checkmark & \checkmark & \checkmark & & \checkmark & & & & & \\
-%
-Improvise & \checkmark & & & \checkmark & \checkmark & \checkmark & & & \checkmark & \checkmark & \checkmark & \checkmark & \checkmark & \checkmark \\
-%
-MyBrush & & \checkmark & \checkmark & & \checkmark & & \checkmark & & & & \checkmark & & & \\
-%
-XDAT & \checkmark & \checkmark & \checkmark & \checkmark & \checkmark & & \checkmark & & & & & & & \\
-%
-TabuVis & \checkmark & & & & \checkmark & & \checkmark & & & & & & & \\
-\bottomrule
-\end{tabularx}
-\captionof{table}{Comparison of MVA Tools.}
-\label{tab:SoftwareFeatures}
-\end{landscape}
-\clearpage% Flush page
-}
+%% \afterpage{%
+%% \clearpage% Flush earlier floats (otherwise order might not be correct)
+%% \thispagestyle{empty}% empty page style (?)
+%% \begin{landscape}% Landscape page
+%% \tablestretch
+%% \rowcolors{2}{}{tablerowcolour}
+%% \centering
+%% \begin{tabularx}{\linewidth}
+%% {>{\kern-\tabcolsep}lcccccccccccccc<{\kern-\tabcolsep}}
+%% \toprule
+%% \thead{Software} & \thead{Custom \\ Datasets} & \thead{Brushing} & \thead{Linking} & \thead{Table \\ View} & \thead{Scatter \\ Plot} & \thead{Scatter \\ Plot \\ Matrix} & \thead{Parallel \\ Coordinates} & \thead{Parallel \\ Coordinates \\ Matrix} & \thead{Similarity \\ Map} & \thead{Time \\ Series} & \thead{Distributions} & \thead{Table \\ Plot} & \thead{Tree \\ Map} & \thead{Carto \\ Plot} \\
+%% \midrule
+%% InfoScope & \checkmark & \checkmark & \checkmark & \checkmark & & & \checkmark & & \checkmark & & & & & \checkmark \\
+%% %
+%% High-D & \checkmark & \checkmark & \checkmark & \checkmark & \checkmark & \checkmark & \checkmark & \checkmark & \checkmark &  & \checkmark & \checkmark & \checkmark & \checkmark \\
+%% %
+%% GGobi & \checkmark & & & & \checkmark & \checkmark & \checkmark & & & \checkmark & \checkmark & & & \\
+%% %
+%% mVis & \checkmark & \checkmark & \checkmark & & \checkmark & \checkmark & \checkmark & & \checkmark & & & & & \\
+%% %
+%% Improvise & \checkmark & & & \checkmark & \checkmark & \checkmark & & & \checkmark & \checkmark & \checkmark & \checkmark & \checkmark & \checkmark \\
+%% %
+%% MyBrush & & \checkmark & \checkmark & & \checkmark & & \checkmark & & & & \checkmark & & & \\
+%% %
+%% XDAT & \checkmark & \checkmark & \checkmark & \checkmark & \checkmark & & \checkmark & & & & & & & \\
+%% %
+%% TabuVis & \checkmark & & & & \checkmark & & \checkmark & & & & & & & \\
+%% \bottomrule
+%% \end{tabularx}
+%% \captionof{table}{Comparison of MVA Tools.}
+%% \label{tab:SoftwareFeatures}
+%% \end{landscape}
+%% \clearpage% Flush page
+%% }
 
 
