@@ -8,6 +8,17 @@ allow analysts to create and manipulate graphical representations of the data in
 trends, and relationships. In this section, we will review some popular MVA approaches.
 
 
+\section{Brushing and Linking}
+
+Brushing and linking are techniques used in multidimensional visual analysis to allow the user to interact with a visualization and explore data in greater depth.
+
+Brushing refers to the process of selecting data points or regions in one visualization and highlighting those data points in other visualizations. This allows the user to see how the data points or regions of interest are related to other variables in the dataset.
+
+Linking refers to the process of synchronizing the views of multiple visualizations, such that a change made to one visualization is reflected in the other visualizations. This allows the user to explore the data from different perspectives and understand how different variables are related to one another.
+
+Both brushing and linking are useful for helping users to identify patterns and relationships in the data and for facilitating the process of data exploration and analysis.
+
+
 
 
 \section{Scatter Plots}
