@@ -37,7 +37,7 @@
 % \newcommand{\thisauthor}{Keith Andrews, Tom Black, and Harry White}      % multiple authors
 \newcommand{\thiskeywords}{multidimensional visual analysis}   % keywords
 
-\newcommand{\thisdate}{23 Jan 2023}  % date of this version
+\newcommand{\thisdate}{22 Feb 2023}  % date of this version
 \newcommand{\thisyear}{2023}         % year of this version
 
 
@@ -797,18 +797,20 @@ Copyright \copyright\ by the Association for Computing Machinery, Inc.%
 % Lookup services:
 % http://kmittlib.lib.kmutt.ac.th:81/search/i?SEARCH=0020-0190
 % http://worldcatlibraries.org/wcpa/issn/0020-0190
+% https://portal.issn.org/resource/ISSN/1467-8659
 
 \newrobustcmd{\issn}[1]
 {%
 {%
 \ifpdf
 {\smaller ISSN
-\href{http://worldcatlibraries.org/wcpa/issn/#1}{#1}}%
+\href{https://portal.issn.org/resource/ISSN/#1}{#1}}%
 \else
 {\smaller ISSN #1}%
 \fi
 }%
 }
+
 
 
 
