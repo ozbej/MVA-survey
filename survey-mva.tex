@@ -3,13 +3,13 @@
 
 \label{chap:MVA}
 
-Multidimensional Visual Analysis (MVA) refers to methods and
-techniques to analyze and understand complex data sets using visual
-representations. These approaches typically involve the use of
-specialized software or tools that allow analysts to create and
-manipulate graphical representations of the data in order to uncover
-patterns, trends, and relationships. In this section, some popular MVA
-approaches are reviewed \parencite{cao2011mva}.
+Multidimensional Visual Analysis (MVA) refers to methods and techniques to
+analyze and understand complex data sets using visual representations.
+These approaches typically involve the use of specialized software or
+tools that allow analysts to create and manipulate graphical
+representations of the data in order to uncover patterns, trends, and
+relationships. In this section, some popular MVA approaches are reviewed
+\parencites{cao2011mva}[Chapter~2]{dzemyda2012mva}.
 
 
 
@@ -42,7 +42,7 @@ displaying data point on x-axis and on y-axis
 \caption[Scatterplot]
 {
 A scatterplot displaying data points on x-axis and on y-axis.
-\imgcredit{Drawn by Ožbej Golob.}
+\imgcredit{Drawn by Ožbej Golob using Adobe Illustrator.}
 }
 \label{fig:ScatterplotDiagram}
 \end{figure}
@@ -56,12 +56,40 @@ A scatterplot displaying data points on x-axis and on y-axis.
 Similarity maps are projections of high-dimensional datasets to two (or
 sometimes three) dimensions. Projection techniques are used to reduce the
 number of dimensions in the data, while attempting to preserve distances
-between items as far as possible. Items which are close in the
+between items as much as possible. Items which are close in the
 high-dimensional space should also be close in the resulting
-two-dimensional projection space. Such projections can be further split
-into \emph{linear} and \emph{non-linear} projections.
-Figure~\ref{fig:DimRed} shows an example visualization of data where
-dimensions were reduced with the Principal Component Analysis (PCA). 
+two-dimensional projection space. Projections can be further split into
+\emph{linear} and \emph{non-linear} projections. 
+
+A linear projection is a transformation that can be represented by a
+linear function. This means that the output of a linear projection is a
+linear combination of the input features, where each feature is multiplied
+by a scaling factor and then added together. In other words, a linear
+projection involves scaling and rotating the data without distorting it,
+and its output could be used to label the projected axis. Linear
+projections are useful for reducing the dimensionality of data while
+preserving its structure and relationships between variables. Common
+examples of linear projections include Principal Component Analysis (PCA)
+and Linear Discriminant Analysis (LDA). Figure~\ref{fig:DimRed} shows an
+example visualization of data where dimensions were reduced with the
+Principal Component Analysis (PCA). 
+
+A non-linear projection, on the other hand, involves more complex
+transformations that cannot be represented by a linear function. This
+means that the output of a non-linear projection is a complex combination
+of the input features that may involve multiplication, exponentiation, or
+other non-linear operations. Non-linear projections can distort the data
+in order to reveal patterns and relationships that may not be apparent in
+the original high-dimensional space. Non-linear projections are
+particularly useful for data that exhibits complex and non-linear
+relationships between variables. Examples of non-linear projections
+include t-distributed Stochastic Neighbor Embedding (t-SNE) and Locally
+Linear Embedding (LLE).
+
+Overall, the main difference between linear and non-linear projections is
+that linear projections preserve the structure and relationships between
+variables, while non-linear projections may distort the data to reveal
+complex patterns and relationships.
 
 \begin{figure}[tp]
 \centering
@@ -94,26 +122,80 @@ method.
 
 \subsection{Principal Component Analysis (PCA)}
 
-Principal Component Analysis (PCA) is a linear projection. PCA uses
-linear algebra to identify the underlying dimensions or factors in the
-data and project the data onto a lower-dimensional space
+Principal Component Analysis (PCA) is a linear projection. PCA uses linear
+algebra to identify the underlying dimensions or factors in the data and
+project the data onto a lower-dimensional space.
+
+The main goal of PCA is to identify patterns in data, which are often
+hidden or difficult to detect. This is done by analyzing the covariance
+matrix of the original dataset, which describes the relationship between
+the different variables. By calculating the eigenvectors and eigenvalues
+of the covariance matrix, PCA identifies the directions in which the data
+varies the most, or the principal components. 
+
+The principal components are ordered by the amount of variance they
+explain in the original data. The first principal component explains the
+largest amount of variance, followed by the second principal component,
+and so on. By keeping only the principal components that explain the
+majority of the variance in the data, the dimensionality of the dataset
+can be reduced, while still retaining the most important information
 \parencite{abdi2010principal}.
 
 
 \subsection{Multi-Dimensional Scaling (MDS)}
 
-Multi-Dimensional Scaling (MDS) is a non-linear projection. MDS uses a
-distance metric to preserve the distances between data points in the
-high-dimensional space and project the data onto a lower-dimensional
-space \parencite{morrison2003fast}.
+Multi-Dimensional Scaling (MDS) is a non-linear projection. MDS is used to
+visualize the similarity or dissimilarity between different objects or
+observations. The technique transforms a set of high-dimensional data into
+a lower-dimensional space, usually two or three dimensions, while
+preserving the relationships between the data points.
+
+MDS works by first calculating the pairwise distances or dissimilarities
+between all the objects in the dataset. These distances could be based on
+any metric, such as Euclidean distance, correlation distance, or other
+similarity measures. Once the distance matrix is constructed, MDS tries to
+find a configuration of points in a lower-dimensional space that best
+reproduces the distances or dissimilarities between the original objects.
+This is done by minimizing a cost function, such as stress or error, which
+measures the discrepancy between the original pairwise distances and the
+distances between the projected points.
+
+MDS can be classified into two main types: metric and non-metric. In
+metric MDS, the pairwise distances between the objects are preserved
+exactly, while in non-metric MDS, only the rank order of the distances is
+preserved. Non-metric MDS is often used when the underlying distance
+metric is unknown or not easily quantifiable \parencite{morrison2003fast}.
 
 
 \subsection{t-Distributed Stochastic Neighbor Embedding (t-SNE)}
 
 t-Distributed Stochastic Neighbor Embedding (t-SNE) is a non-linear
 projection. t-SNE uses a probabilistic model to preserve the local
-structure of the data in the high-dimensional space and project the
-data onto a lower-dimensional space \parencite{van2008visualizing}.
+structure of the data in the high-dimensional space and project the data
+onto a lower-dimensional space, , usually two or three dimensions.
+
+The t-SNE algorithm works by first calculating the pairwise similarities
+between all the data points in the high-dimensional space. This is
+typically done using a Gaussian kernel, which measures the similarity
+between two points as a function of their Euclidean distance. The
+similarities are then used to construct a probability distribution for
+each point that defines the likelihood of finding other points nearby.
+
+In the low-dimensional space, t-SNE tries to find a configuration of
+points that preserves the pairwise similarities between the
+high-dimensional data points as closely as possible. The algorithm does
+this by minimizing a cost function that measures the divergence between
+the probability distributions in the high-dimensional and low-dimensional
+spaces. The optimization is performed using gradient descent, which
+iteratively updates the position of each point in the low-dimensional
+space until the cost function is minimized.
+
+One of the key features of t-SNE is that it uses a Student's
+t-distribution to model the probability distribution in the
+low-dimensional space. This allows t-SNE to emphasize the differences
+between nearby data points and de-emphasize the differences between
+distant data points, which helps to prevent crowding and distortion in the
+final visualization \parencite{van2008visualizing, wattenberg2016how}.
 
 
 \subsection{Uniform Manifold Approximation and Projection (UMAP)}
@@ -126,8 +208,33 @@ manifold, (ii) The Riemannian metric is locally constant, and (iii) The
 manifold is locally connected. UMAP uses these assumptions to model the
 manifold with a fuzzy topological structure. The embedding is determined
 by searching for a low-dimensional projection of the data that is the
-closest equivalent to the fuzzy topological structure
+closest equivalent to the fuzzy topological structure.
+
+UMAP works by creating a low-dimensional representation of the data while
+preserving the global structure of the data. This is achieved by modeling
+the data as a high-dimensional manifold, which is a mathematical object
+that represents the underlying structure of the data. UMAP then finds a
+low-dimensional embedding of the manifold that preserves the local
+structure of the data.
+
+The UMAP algorithm consists of several steps. First, a nearest-neighbor
+graph is constructed by connecting each data point to its nearest
+neighbors. This graph is then used to create a fuzzy simplicial set, which
+is a mathematical object that captures the local structure of the data.
+The fuzzy simplicial set is then transformed into a low-dimensional
+representation using a stochastic gradient descent algorithm.
+
+UMAP has several advantages over other dimensionality reduction
+techniques. For example, UMAP is able to preserve both the global and
+local structure of the data, which means that it can be used for both
+exploratory data analysis and machine learning tasks
 \parencite{mcinnes2018umap}.
+
+
+\subsection{Comparison of Similarity Mapping techniques}
+
+The following section shows how above mentioned similarity mapping
+techniques work in practice.
 
 
 
@@ -152,7 +259,7 @@ coordinates plot displaying data points with multiple dimensions.
 \caption[Parallel Coordinates]
 {
 A parallel coordinates plot displaying data points with multiple dimensions.
-\imgcredit{Drawn by Ožbej Golob.}
+\imgcredit{Drawn by Ožbej Golob using Adobe Illustrator.}
 }
 \label{fig:ParallelCoordinatesDiagram}
 \end{figure}
@@ -194,7 +301,7 @@ process of data exploration and analysis.
 \caption[Brushing]
 { An example of brushing. The user selected a single data point which
 is now highlighted in all views with red color.
-\imgcredit{Drawn by Ožbej Golob.}
+\imgcredit{Drawn by Ožbej Golob using Adobe Illustrator.}
 }
 \label{fig:BrushingDiagram}
 \end{figure}
