@@ -54,12 +54,16 @@ A scatterplot displaying data points on x-axis and on y-axis.
 \section{Similarity Maps}
 
 Similarity maps are projections of high-dimensional datasets to two (or
-sometimes three) dimensions. Projection techniques are used to reduce the
-number of dimensions in the data, while attempting to preserve distances
-between items as much as possible. Items which are close in the
-high-dimensional space should also be close in the resulting
-two-dimensional projection space. Projections can be further split into
-\emph{linear} and \emph{non-linear} projections. 
+sometimes three) dimensions. High-dimensional datasets have a large number
+of columns (dimensions), which presents many computational and
+mathematical challenges. By reducing dimensions we lower the computational
+workload without losing much information.
+
+Projection techniques are used to reduce the number of dimensions in the
+data, while attempting to preserve distances between items as much as
+possible. Items which are close in the high-dimensional space should also
+be close in the resulting two-dimensional projection space. Projections
+can be further split into \emph{linear} and \emph{non-linear} projections. 
 
 A linear projection is a transformation that can be represented by a
 linear function. This means that the output of a linear projection is a
@@ -231,12 +235,60 @@ exploratory data analysis and machine learning tasks
 \parencite{mcinnes2018umap}.
 
 
-\subsection{Comparison of Similarity Mapping techniques}
+\subsection{Comparison of Similarity Mapping Techniques}
 
-The following section shows how above mentioned similarity mapping
-techniques work in practice.
+The following section is meant to illustrate how above mentioned
+similarity mapping techniques work in practice on two well-known datasets.
+All graphics in the following section are generated using Python with the
+help of the following libraries: [TODO add libraries and cite them].
+
+The \emph{Iris dataset}~\parencite{fisher1936use} is arguably the best known
+dataset in the pattern recognition literature. The dataset contains 150
+instances belonging to 3 classes of Iris flower species (each class has 50
+instances). Each instance has the following attributes: sepal length in
+cm, sepal width in cm, petal length in cm, and petal width in cm. Each
+instance belongs into one of 3 classes: Iris Setosa, Iris Versicolour, or
+Iris Virginica. Iris Setosa is linearly separable from the
+other 2, and the latter are not linearly separable from each other.
+Figure~\ref{fig:IrisDataset} shows comparison of similarity mapping
+techniques on the Iris dataset.
+
+The \emph{Palmer Penguins dataset}~\parencite{gorman2014ecological,
+horst2020penguins} contains 342 instances belonging to 3 classes of
+penguin species from Antarctica (Torgersen, Biscoe, and Dream islands).
+Each instance has the following attributes: island, bill length in mm,
+bill depth in mm, flipper length in mm, body mass in g, sex, and year.
+Each instance belongs into one of 3 classes: Adelie, Gentoo, or Chinstrap.
+Figure~\ref{fig:PenguinDataset} shows comparison of similarity mapping
+techniques on the Palmer Penguins dataset.
+
+\begin{figure}[tp]
+\centering
+\includegraphics[frame,keepaspectratio,width=\linewidth,height=\halfh]
+{diagrams/iris.pdf}
+
+\caption[Similarity Mapping on Iris dataset]
+{
+  Comparison of similarity mapping techniques on the Iris dataset.
+\imgcredit{Drawn by Ožbej Golob using Python.}
+}
+\label{fig:IrisDataset}
+\end{figure}
 
 
+\begin{figure}[tp]
+\centering
+\includegraphics[frame,keepaspectratio,width=\linewidth,height=\halfh]
+{diagrams/penguins.pdf}
+
+\caption[Similarity Mapping on Palmer Penguins dataset]
+{
+  Comparison of similarity mapping techniques on the Palmer Penguins
+  dataset.
+\imgcredit{Drawn by Ožbej Golob using Python.}
+}
+\label{fig:PenguinDataset}
+\end{figure}
 
 
 \section{Parallel Coordinates}
