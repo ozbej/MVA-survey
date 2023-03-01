@@ -4,7 +4,7 @@
 \label{chap:MVA}
 
 Multidimensional Visual Analysis (MVA) refers to methods and techniques to
-analyze and understand complex data sets using visual representations.
+analyze and understand complex datasets using visual representations.
 These approaches typically involve the use of specialized software or
 tools that allow analysts to create and manipulate graphical
 representations of the data in order to uncover patterns, trends, and
@@ -242,25 +242,32 @@ similarity mapping techniques work in practice on two well-known datasets.
 All graphics in the following section are generated using Python with the
 help of the following libraries: [TODO add libraries and cite them].
 
-The \emph{Iris dataset}~\parencite{fisher1936use} is arguably the best known
-dataset in the pattern recognition literature. The dataset contains 150
-instances belonging to 3 classes of Iris flower species (each class has 50
-instances). Each instance has the following attributes: sepal length in
-cm, sepal width in cm, petal length in cm, and petal width in cm. Each
-instance belongs into one of 3 classes: Iris Setosa, Iris Versicolour, or
-Iris Virginica. Iris Setosa is linearly separable from the
+The \emph{Iris dataset}~\parencite{fisher1936use} is arguably the best
+known dataset in the pattern recognition literature. The dataset contains
+150 instances belonging to 3 classes of Iris flower species (each class
+has 50 instances). Each instance has the following attributes: sepal
+length in cm, sepal width in cm, petal length in cm, and petal width in
+cm. Each instance belongs into one of 3 classes: Iris Setosa, Iris
+Versicolour, or Iris Virginica. Iris Setosa is linearly separable from the
 other 2, and the latter are not linearly separable from each other.
 Figure~\ref{fig:IrisDataset} shows comparison of similarity mapping
-techniques on the Iris dataset.
+techniques on the Iris dataset. It is visible that all techniques separate
+Iris Setoca class from the other two, while the other two can not be
+clearly separated from each other. t-SNE and UMAP techniques generate
+dense clusters while PCA and MDS clusters are more sparse.
 
 The \emph{Palmer Penguins dataset}~\parencite{gorman2014ecological,
 horst2020penguins} contains 342 instances belonging to 3 classes of
-penguin species from Antarctica (Torgersen, Biscoe, and Dream islands).
-Each instance has the following attributes: island, bill length in mm,
-bill depth in mm, flipper length in mm, body mass in g, sex, and year.
-Each instance belongs into one of 3 classes: Adelie, Gentoo, or Chinstrap.
-Figure~\ref{fig:PenguinDataset} shows comparison of similarity mapping
-techniques on the Palmer Penguins dataset.
+penguin species from Antarctica (from Torgersen, Biscoe, and Dream
+islands). Each instance has the following attributes: island, bill length
+in mm, bill depth in mm, flipper length in mm, body mass in g, sex, and
+year. Each instance belongs into one of 3 classes: Adelie, Gentoo, or
+Chinstrap. Figure~\ref{fig:PenguinDataset} shows comparison of similarity
+mapping techniques on the Palmer Penguins dataset. It is visible that all
+techniques separate Gentoo class from the other two, while the other
+two can not be clearly separated from each other. t-SNE and UMAP
+techniques generate dense clusters while PCA and MDS clusters are more
+sparse.
 
 \begin{figure}[tp]
 \centering
@@ -363,17 +370,17 @@ is now highlighted in all views with red color.
 
 \section{Grouping and Labelling}
 
-Grouping and labeling data is a fundamental step in the ML process.
-Grouping refers to the process of identifying and separating similar data
-points, while labeling refers to the process of providing relevant
-information about the data. Grouping and labelling data helps to organize
-and structure the data, making it easier to understand and work with. It
-allows for more accurate and meaningful analysis of the data, as similar
-data points can be grouped together and analyzed in relation to one
-another. It also allows the ML model to understand the context of the data
-and make more accurate predictions, and enables the interpretability of
-the model, by providing meaningful information about the data and how it
-is being used.
+Grouping and labeling data is a fundamental step in the Machine Learning
+(ML) process. Grouping refers to the process of identifying and separating
+similar data points, while labeling refers to the process of providing
+relevant information about the data. Grouping and labelling data helps to
+organize and structure the data, making it easier to understand and work
+with. It allows for more accurate and meaningful analysis of the data, as
+similar data points can be grouped together and analyzed in relation to
+one another. It also allows the ML model to understand the context of the
+data and make more accurate predictions, and enables the interpretability
+of the model, by providing meaningful information about the data and how
+it is being used.
 
 \subsection{Manual Grouping}
 
